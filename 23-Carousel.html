@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <title>Bootstrap Sandbox | DarkMode</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-5">Carousel</h1>
+
+      <!-- Carousel -->
+      <div class="carousel slide" id="slider">
+        <!--Indicators-->
+        <div class="carousel-indicators">
+          <button
+            class="active"
+            data-bs-slide-to="0"
+            data-bs-target="#slider"
+          ></button>
+          <button data-bs-slide-to="1" data-bs-target="#slider"></button>
+          <button data-bs-slide-to="2" data-bs-target="#slider"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/200" alt="" class="d-block w-100" />
+            <div
+              class="carousel-caption d-none d-md-block bg-danger opacity-75"
+            >
+              <h5>Sampel Heading</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/200" alt="" class="d-block w-100" />
+            <div class="carousel-caption d-none d-md-block bg-info opacity-75">
+              <h5>Sampel Heading</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/200" alt="" class="d-block w-100" />
+            <div
+              class="carousel-caption d-none d-md-block bg-warning opacity-75"
+            >
+              <h5>Sampel Heading</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Button-->
+        <button
+          class="carousel-control-prev"
+          data-bs-slide="prev"
+          data-bs-target="#slider"
+          type="button"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visuslly-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          data-bs-slide="next"
+          data-bs-target="#slider"
+          type="button"
+        >
+          <span class="visuslly-hidden">Next</span>
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+     
+    </div>
+    
+    <h1 class="m-5">AutoPLay Carousel</h1>
+    <!--Auto PLay Carosuel-->
+     <div class="carousel slide" id="autoplay" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/200" alt="" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/200" alt="" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/200" alt="" class="d-block w-100" />
+        </div>
+      </div>
+                <!--Button-->
+      <button class="carousel-control-prev"
+      type="button"
+      data-bs-target="#autoplay"
+      data-bs-silde="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+ 
+     <button class="carousel-control-next"
+     type="button"
+     data-bs-target="#autoplay"
+     data-bs-silde="next">
+     <span class="carousel-control-next-icon"></span>
+     <span class="visually-hidden">Next</span>
+    </button>
+     </div>
+
+  </br></br>
+   <!-- Don't go past here -->
+    <div style="margin-top: 350px"></div>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <title>Bootstrap Sandbox | DarkMode</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-5">Accordion & Collapse</h1>
+
+      <!-- Accordion -->
+      <div class="accordion" id="myaccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse1"
+            >
+              Accordion 1
+            </button>
+          </h2>
+          <div
+            class="accordion-collapse collapse show"
+            id="collapse1"
+            data-bs-parent="#myaccordion"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              ea error exercitationem natus hic, nihil veniam assumenda sed
+              sequi repellat rem quaerat laudantium expedita itaque illum saepe
+              quis. Accusantium, nulla?
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-iteam">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse2"
+            >
+              Accordion 2
+            </button>
+          </h2>
+          <div
+            class="accordion-collapse collapse"
+            data-bs-parent="#myaccordion"
+            id="collapse2"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              sequi dolor fugit earum mollitia sed sint odio doloribus ad,
+              repellat quae voluptatem id. Laudantium dolorem aut cum sit
+              mollitia ipsum.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-iteam">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse3"
+            >
+              Accordion 3
+            </button>
+          </h2>
+          <div
+            class="accordion-collapse collapse"
+            data-bs-parent="#myaccordion"
+            id="collapse3"
+          >
+            <div class="accordion-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              dignissimos cum ex inventore blanditiis debitis cupiditate commodi
+              cumque consequuntur nemo neque amet, vel repellat eius accusamus
+              voluptatibus tempore sint dolore, animi fugiat facere? Molestiae,
+              fugit.
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+
+      <!-- Collapse -->
+      <div class="my-3">
+        <button
+          class="btn btn-warning"
+          data-bs-toggle="collapse"
+          data-bs-target="#mytoggle"
+        >
+          Toggle content
+        </button>
+      </div>
+      <div class="collapse" id="mytoggle">
+        <div class="card" style="width: 25rem">
+          <div class="card-body">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nam
+              vitae maxime corrupti sunt tempora officia ad dolor debitis,
+              obcaecati qui, quasi necessitatibus rem suscipit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-3">
+        <button
+          class="btn btn-danger"
+          data-bs-toggle="collapse"
+          data-bs-target="#mytoggle1"
+        >
+          Toggle Content 2
+        </button>
+        <div class="collapse" id="mytoggle1">
+          <div class="card" style="width: 20rem">
+            <div class="card-body">
+              <p class="card-test">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+                ut accusantium aliquam molestias fugit itaque aliquid sit facere
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Don't go past here -->
+    </div>
+    <div style="margin-top: 350px"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
